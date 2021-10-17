@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name lensman)(type Legacy)(uri /Users/kevin/github/lensman/lensman.lib)(options "")(descr ""))
+  (lib (name WingedA)(type Legacy)(uri ${KIPRJMOD}/WingedA.lib)(options "")(descr ""))
+  (lib (name joyousnoise)(type Legacy)(uri /Users/kevin/github/joyousnoise/kicad/lib/joyousnoise.lib)(options "")(descr ""))
+)

@@ -1,0 +1,132 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L WingedA:Battery_Cell BT1
+U 1 1 616643BC
+P 2350 2350
+F 0 "BT1" H 2468 2446 50  0000 L CNN
+F 1 "Battery_Cell" H 2468 2355 50  0000 L CNN
+F 2 "WingedA:BK-913" V 2350 2410 50  0001 C CNN
+F 3 "" V 2350 2410 50  0001 C CNN
+	1    2350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L WingedA:LED D1
+U 1 1 61664B6B
+P 3600 1950
+F 0 "D1" H 3593 1695 50  0000 C CNN
+F 1 "LED" H 3593 1786 50  0000 C CNN
+F 2 "WingedA:LED_D5.0mm" H 3600 1950 50  0001 C CNN
+F 3 "" H 3600 1950 50  0001 C CNN
+	1    3600 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L WingedA:LED D2
+U 1 1 61665107
+P 3600 2300
+F 0 "D2" H 3593 2045 50  0000 C CNN
+F 1 "LED" H 3593 2136 50  0000 C CNN
+F 2 "WingedA:LED_D5.0mm" H 3600 2300 50  0001 C CNN
+F 3 "" H 3600 2300 50  0001 C CNN
+	1    3600 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L WingedA:SW_SPDT SW1
+U 1 1 61665DCF
+P 3200 2950
+F 0 "SW1" H 3200 3235 50  0000 C CNN
+F 1 "SW_SPDT" H 3200 3144 50  0000 C CNN
+F 2 "WingedA:SM_SlideSW" H 3200 2950 50  0001 C CNN
+F 3 "~" H 3200 2950 50  0001 C CNN
+	1    3200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2450 2350 2950
+Wire Wire Line
+	2350 2950 3000 2950
+Wire Wire Line
+	2350 2100 3150 2100
+Wire Wire Line
+	3150 2100 3150 1950
+Wire Wire Line
+	3150 1950 3450 1950
+Wire Wire Line
+	3150 2100 3150 2300
+Wire Wire Line
+	3150 2300 3450 2300
+Connection ~ 3150 2100
+Wire Wire Line
+	3750 1950 3950 1950
+Wire Wire Line
+	3950 1950 3950 2100
+Wire Wire Line
+	3950 2300 3750 2300
+Wire Wire Line
+	3400 2850 4100 2850
+Wire Wire Line
+	4100 2850 4100 2100
+Wire Wire Line
+	4100 2100 3950 2100
+Connection ~ 3950 2100
+Wire Wire Line
+	3950 2100 3950 2300
+Wire Wire Line
+	2350 2100 2350 2150
+$Comp
+L WingedA:Logo G1
+U 1 1 6166B790
+P 6600 2250
+F 0 "G1" H 6678 2296 50  0000 L CNN
+F 1 "Logo" H 6678 2205 50  0000 L CNN
+F 2 "WingedA:WingedA_Logo" H 6500 2250 50  0001 C CNN
+F 3 "" H 6500 2250 50  0001 C CNN
+	1    6600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616CD1E6
+P 4100 2950
+F 0 "#PWR?" H 4100 2700 50  0001 C CNN
+F 1 "GND" H 4105 2777 50  0000 C CNN
+F 2 "" H 4100 2950 50  0001 C CNN
+F 3 "" H 4100 2950 50  0001 C CNN
+	1    4100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2950 4100 2850
+Connection ~ 4100 2850
+$Comp
+L power:VCC #PWR?
+U 1 1 616CDFAA
+P 2350 1950
+F 0 "#PWR?" H 2350 1800 50  0001 C CNN
+F 1 "VCC" H 2365 2123 50  0000 C CNN
+F 2 "" H 2350 1950 50  0001 C CNN
+F 3 "" H 2350 1950 50  0001 C CNN
+	1    2350 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1950 2350 2100
+Connection ~ 2350 2100
+NoConn ~ 3400 3050
+$EndSCHEMATC
